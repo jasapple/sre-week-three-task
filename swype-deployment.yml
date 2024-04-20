@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: swype-app
+  namespace: sre
 spec:
   replicas: 1
   selector:
@@ -21,4 +22,4 @@ spec:
           resources:
             limits:
               cpu: "1"
-              memory: "4Gi"
+              memory: "2Gi"
